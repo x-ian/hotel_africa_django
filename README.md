@@ -1,0 +1,1 @@
+# hotel_africa_django
