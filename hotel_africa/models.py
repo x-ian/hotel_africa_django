@@ -1,8 +1,16 @@
+from django.contrib.auth import get_user_model
 from django.db import models
-
+import datetime
+import uuid
+    
 class Facility(models.Model):
     name = models.CharField(max_length=100)
+    checkin_from = models.TimeField()
+    checkin_to = models.TimeField()
+    checkout_from = models.TimeField()
+    checkout_to = models.TimeField()
     arrival = models.TextField(max_length=1024, blank=True, default='')
+    description = models.TextField(max_length=1024, blank=True, default='')
     address_street_1 = models.CharField(max_length=100)
     address_street_2 = models.CharField(max_length=100, blank=True, default='')
     address_city = models.CharField(max_length=100)
@@ -36,27 +44,57 @@ class Facility(models.Model):
     def __str__(self):
         return self.name
 
+class UnitRate(models.Model):
+    name = models.CharField(max_length=100) 
+    valid_from = models.DateField()
+    valid_to = models.DateField()
+    class Currency(models.TextChoices):
+        USD = 'USD (USA)'
+        EUR = 'EUR (Europe)'
+        XOF = 'XOF (CFA Franc)'
+        NGN = 'NGN (Nigeria)'
+        MWK = 'MWK (Malawi)'
+    rate_currency = models.CharField(
+        max_length=25,
+        choices=Currency.choices,
+        default=Currency.USD,
+    )
+    rate_standard = models.DecimalField(max_digits=6, decimal_places=2)
+    rate_early_booker = models.DecimalField(max_digits=6, decimal_places=2)
+    free_cancellation = models.BooleanField(default=False)
+    rate_cancellation = models.DecimalField(max_digits=6, decimal_places=2)
+    payment_cash = models.BooleanField(default=False)
+    payment_creditcard = models.BooleanField(default=False)
+    payment_paypal = models.BooleanField(default=False)
+    payment_wiretransfer = models.BooleanField(default=False)
+    payment_westernunion = models.BooleanField(default=False)
+    special_offers = models.TextField(max_length=1024, blank=True, default='')
+    meals = models.TextField(max_length=1024, blank=True, default='')
+
+    def __str__(self):
+        return self.name
+
 class Unit(models.Model):
     name = models.CharField(max_length=100) 
+    description = models.TextField(max_length=1024, blank=True, default='')
     
-    facility = models.ForeignKey(
-        Facility, 
-        on_delete=models.DO_NOTHING,
-    )
+    facility = models.ForeignKey(Facility, on_delete=models.DO_NOTHING,)
     
     quantity_of_units_in_facility = models.IntegerField()
-    class Kind(models.TextChoices):
+    class Type(models.TextChoices):
         ROOM = 'room'
         APARTMENT = 'apartment'
         HOUSE = 'house'
         OTHER = 'other'
-    kind = models.CharField(
+    type = models.CharField(
         max_length=9,
-        choices=Kind.choices,
-        default=Kind.ROOM,
+        choices=Type.choices,
+        default=Type.ROOM,
     )
     max_people = models.IntegerField(null=True, blank=True)
     square_meters = models.IntegerField(null=True, blank=True)
+    unitrates = models.ManyToManyField(UnitRate)
+    
     class InternetAccess(models.TextChoices):
         NO = 'no'
         IN_UNIT = 'in_unit'
@@ -84,7 +122,6 @@ class Unit(models.Model):
     amenity_pets = models.BooleanField(blank=True)
     amenity_wheelchair = models.BooleanField(blank=True)
     amenity_extras = models.TextField(max_length=1024, blank=True, default='')
-    views = models.TextField(max_length=1024, blank=True, default='') #has_many
 
     def __str__(self):
         return self.name
@@ -156,3 +193,98 @@ class UnitBed(models.Model):
         choices=BedType.choices,
         blank=False,
     )
+
+class Booking(models.Model):
+    booking_number = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
+    booking_date = models.DateTimeField(auto_now_add=True)
+    
+    user = models.ForeignKey(get_user_model(), on_delete=models.DO_NOTHING)
+    arrival_date = models.DateField()
+    departure_date = models.DateField()
+    unit = models.ForeignKey(
+        Unit, 
+        on_delete=models.DO_NOTHING,
+    )
+    number_of_persons = models.IntegerField()
+    unitrate = models.ForeignKey(
+        UnitRate, 
+        on_delete=models.DO_NOTHING,
+    )
+    class StatusType(models.TextChoices):
+        NONE = 'None'
+        BOOKED = 'Booked'
+        CANCELED = 'Canceled'
+        NO_SHOW = 'No show'
+        COMPLETED = 'Completed'
+    status = models.CharField(
+        max_length=25,
+        choices=StatusType.choices,
+        default=StatusType.NONE,
+    )
+    class PaymentType(models.TextChoices):
+        CASH = 'Cash'
+        CREDITCARD = 'Credit Card'
+        PAYPAL = 'Paypal'
+        WIRE_TRANSFER = 'Wire transfer'
+        WESTERN_UNION = 'Western Union'
+    payment = models.CharField(
+        max_length=25,
+        choices=PaymentType.choices,
+    )
+    class Currency(models.TextChoices):
+        USD = 'USD (USA)'
+        EUR = 'EUR (Europe)'
+        XOF = 'XOF (CFA Franc)'
+        NGN = 'NGN (Nigeria)'
+        MWK = 'MWK (Malawi)'
+    total_price_currency = models.CharField(
+        max_length=25,
+        choices=Currency.choices,
+        default=Currency.USD,
+        editable=False
+    )
+    total_price = models.DecimalField(default=-1, editable=False, max_digits=6, decimal_places=2)
+    
+    def __str__(self):
+        return str(self.booking_number)
+
+class Review(models.Model):
+    booking = models.ForeignKey(Booking, on_delete=models.DO_NOTHING, )
+    user = models.ForeignKey(get_user_model(), on_delete=models.DO_NOTHING)
+    review_date = models.DateTimeField(auto_now_add=True)
+    review_text = models.TextField(max_length=1024, blank=True, default='')
+    class Rating(models.TextChoices):
+        ONE = '1/5'
+        TWO = '2/5'
+        THREE = '3/5'
+        FOUR = '4/5'
+        FIVE = '5/5'
+    review_rating = models.CharField(
+        max_length=5,
+        choices=Rating.choices,
+    )
+    class Languages(models.TextChoices):
+        DE = 'german'
+        FR = 'french'
+        EN = 'english'
+        ES = 'spanish'
+    language = models.CharField(
+        max_length=25,
+        choices=Languages.choices,
+        blank=False,
+    )
+    
+    def __str__(self):
+        return str(self.id)
+
+class Message(models.Model):
+    message_date = models.DateTimeField(auto_now_add=True)
+    body = models.TextField(max_length=2048, blank=False)
+    from_user = models.ForeignKey(get_user_model(), related_name='from_user', on_delete=models.DO_NOTHING,)
+    to_user = models.ForeignKey(get_user_model(), related_name='to_user', on_delete=models.DO_NOTHING)
+    refer_booking = models.ForeignKey(Booking, blank=True, on_delete=models.DO_NOTHING)
+    refer_unit = models.ForeignKey(Unit, blank=True, on_delete=models.DO_NOTHING)
+    refer_facility = models.ForeignKey(Facility, blank=True, on_delete=models.DO_NOTHING)
+
+    def __str__(self):
+        return str(self.id)

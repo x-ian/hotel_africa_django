@@ -4,6 +4,7 @@ from .models import Facility
 from .models import FacilityPhoto
 from .models import Unit
 from .models import UnitPhoto
+from .models import Booking
 from .models import *
 from django.db import models
 
@@ -45,7 +46,7 @@ class UnitAdmin(admin.ModelAdmin):
     inlines = [ UnitPhotoAdmin, UnitBedAdmin]
     fieldsets = (
         (None, {
-            'fields': ('name', 'facility', 'quantity_of_units_in_facility', 'kind', 'max_people', 'square_meters')
+            'fields': ('name', 'facility','description', 'quantity_of_units_in_facility', 'type', 'max_people', 'square_meters', 'unitrates')
         }),
         ('Internet', {
             'classes': ('collapse',),
@@ -61,7 +62,7 @@ class UnitAdmin(admin.ModelAdmin):
         }),
         ('Misc', {
             'classes': ('collapse',),
-            'fields': ('views',)
+            'fields': ()
         })
     )
 
@@ -83,7 +84,7 @@ class FacilityAdmin(admin.ModelAdmin):
     inlines = [ FacilityPhotoAdmin, FacilityLanguageAdmin]
     fieldsets = (
         (None, {
-            'fields': ('name','arrival', 'contact_email', 'contact_phone_1', 'contact_phone_2', 'policies', 'directions',)
+            'fields': ('name','description', 'contact_email', 'contact_phone_1', 'contact_phone_2',  'checkin_from','checkin_to','checkout_from', 'checkout_to','directions',)
         }),
         ('Address & Location', {
             'classes': ('collapse',),
@@ -95,14 +96,21 @@ class FacilityAdmin(admin.ModelAdmin):
         }),
         ('Misc', {
             'classes': ('collapse',),
-            'fields': ('parking', 'cleaning_laundry', 'cleaning_housekeeping'),
+            'fields': ('parking', 'cleaning_laundry', 'cleaning_housekeeping','arrival','policies',),
         }),
     )
 
+class BookingAdmin(admin.ModelAdmin):
+    readonly_fields = ["booking_number", 'total_price', 'total_price_currency']
+    
 # admin.site.register(Unit)
 admin.site.register(Unit, UnitAdmin)
 # admin.site.register(Facility)
 admin.site.register(Facility, FacilityAdmin)
+admin.site.register(UnitRate)
+admin.site.register(Booking, BookingAdmin)
+admin.site.register(Review)
+admin.site.register(Message)
 
 # only for superuser
 # admin.site.register(Language)

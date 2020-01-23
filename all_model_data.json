@@ -1,0 +1,834 @@
+[
+{
+  "model": "hotel_africa.facility",
+  "pk": 2,
+  "fields": {
+    "name": "Tahiti Hotel",
+    "checkin_from": "13:00:00",
+    "checkin_to": "23:00:00",
+    "checkout_from": "01:00:00",
+    "checkout_to": "12:00:00",
+    "arrival": "",
+    "description": "Located in Cotonou, 5.6 km from Congo Embassy, Tahiti Hotel provides accommodations with a restaurant, free private parking, a bar and a garden. Featuring family rooms, this property also provides guests with a terrace. The property has a 24-hour front desk, room service and currency exchange for guests.\r\n\r\nAt the hotel, every room has a closet. Complete with a private bathroom equipped with a shower and free toiletries, all guest rooms at Tahiti Hotel have a flat-screen TV and air conditioning, and some rooms will provide you with a seating area. The rooms will provide guests with a desk and an electric tea pot.\r\n\r\nA continental breakfast is available daily at the accommodation.\r\n\r\nUNDP Office is 6.1 km from Tahiti Hotel, while Angola Embassy is 8 km away.\r\n\r\nCouples in particular like the location \u2013 they rated it 8.9 for a two-person trip.\r\n\r\nWe speak your language!",
+    "address_street_1": "TF 2922- Maison HOUNGBEDJI Arcadius",
+    "address_street_2": "Quartier Jak Akpakpa",
+    "address_city": "Cotonou",
+    "address_zip": "",
+    "address_state": "",
+    "address_country": "Benin",
+    "location_lat": "6.355419",
+    "location_long": "2.454611",
+    "contact_email": "tahitihotel@gmail.com",
+    "contact_phone_1": "12123123",
+    "contact_phone_2": "",
+    "policies": "Cancellation/prepayment: Cancellation and prepayment policies vary according to accommodations type. Please enter the dates of your stay and check what conditions apply to your preferred room.\r\n\r\nChildren & Beds:\r\nChildren of all ages are welcome.\r\nChildren 6 and above are considered adults at this property.\r\nTo see correct prices and occupancy info, add the number and ages of children in your group to your search.\r\nThere's no capacity for cribs at this property.\r\nThis property doesn't offer extra beds.\r\n\r\nNo age restriction: There's no age requirement for check-in\r\n\r\nPets: Free! Pets are allowed on request. No extra charges.",
+    "directions": "",
+    "speciality_beach": true,
+    "speciality_swimming_pool": true,
+    "speciality_fitness_room": false,
+    "speciality_bar": true,
+    "speciality_restaurant_meal_breakfast": true,
+    "speciality_restaurant_meal_dinner": true,
+    "speciality_restaurant_meal_lunch": true,
+    "speciality_restaurant_prices": "",
+    "speciality_restaurant_times": "",
+    "speciality_kids_playground": true,
+    "speciality_airport_shuttle": true,
+    "speciality_24h_front_desk": true,
+    "speciality_extras": "",
+    "parking": true,
+    "cleaning_laundry": true,
+    "cleaning_housekeeping": true
+  }
+},
+{
+  "model": "hotel_africa.facility",
+  "pk": 3,
+  "fields": {
+    "name": "Christians Cozy Garden House",
+    "checkin_from": "00:00:00",
+    "checkin_to": "23:59:59",
+    "checkout_from": "00:00:00",
+    "checkout_to": "23:59:59",
+    "arrival": "",
+    "description": "",
+    "address_street_1": "a",
+    "address_street_2": "",
+    "address_city": "Nierstein",
+    "address_zip": "",
+    "address_state": "",
+    "address_country": "Germany",
+    "location_lat": "49.869926",
+    "location_long": "8.331536",
+    "contact_email": "a@c.com",
+    "contact_phone_1": "12123123",
+    "contact_phone_2": "",
+    "policies": "",
+    "directions": "",
+    "speciality_beach": false,
+    "speciality_swimming_pool": false,
+    "speciality_fitness_room": false,
+    "speciality_bar": false,
+    "speciality_restaurant_meal_breakfast": false,
+    "speciality_restaurant_meal_dinner": false,
+    "speciality_restaurant_meal_lunch": false,
+    "speciality_restaurant_prices": "",
+    "speciality_restaurant_times": "",
+    "speciality_kids_playground": true,
+    "speciality_airport_shuttle": false,
+    "speciality_24h_front_desk": true,
+    "speciality_extras": "",
+    "parking": false,
+    "cleaning_laundry": false,
+    "cleaning_housekeeping": false
+  }
+},
+{
+  "model": "hotel_africa.facility",
+  "pk": 4,
+  "fields": {
+    "name": "GHII Training & Convention Center",
+    "checkin_from": "00:00:00",
+    "checkin_to": "23:59:59",
+    "checkout_from": "00:00:00",
+    "checkout_to": "23:59:59",
+    "arrival": "",
+    "description": "",
+    "address_street_1": "d",
+    "address_street_2": "",
+    "address_city": "Lilongwe",
+    "address_zip": "",
+    "address_state": "",
+    "address_country": "Malawi",
+    "location_lat": "-14.000443",
+    "location_long": "33.753764",
+    "contact_email": "sdf@w.com",
+    "contact_phone_1": "1231",
+    "contact_phone_2": "",
+    "policies": "",
+    "directions": "",
+    "speciality_beach": false,
+    "speciality_swimming_pool": true,
+    "speciality_fitness_room": true,
+    "speciality_bar": true,
+    "speciality_restaurant_meal_breakfast": false,
+    "speciality_restaurant_meal_dinner": false,
+    "speciality_restaurant_meal_lunch": false,
+    "speciality_restaurant_prices": "",
+    "speciality_restaurant_times": "",
+    "speciality_kids_playground": false,
+    "speciality_airport_shuttle": true,
+    "speciality_24h_front_desk": true,
+    "speciality_extras": "",
+    "parking": true,
+    "cleaning_laundry": true,
+    "cleaning_housekeeping": true
+  }
+},
+{
+  "model": "hotel_africa.facility",
+  "pk": 5,
+  "fields": {
+    "name": "Lake Sheperd Guesthouse",
+    "checkin_from": "00:00:00",
+    "checkin_to": "23:59:59",
+    "checkout_from": "00:00:00",
+    "checkout_to": "23:59:59",
+    "arrival": "",
+    "description": "",
+    "address_street_1": "a",
+    "address_street_2": "",
+    "address_city": "Harper",
+    "address_zip": "",
+    "address_state": "",
+    "address_country": "Liberia",
+    "location_lat": "4.374483",
+    "location_long": "-7.704535",
+    "contact_email": "a@c.com",
+    "contact_phone_1": "1",
+    "contact_phone_2": "",
+    "policies": "",
+    "directions": "4.3744833,-7.704535",
+    "speciality_beach": true,
+    "speciality_swimming_pool": false,
+    "speciality_fitness_room": true,
+    "speciality_bar": false,
+    "speciality_restaurant_meal_breakfast": false,
+    "speciality_restaurant_meal_dinner": false,
+    "speciality_restaurant_meal_lunch": false,
+    "speciality_restaurant_prices": "",
+    "speciality_restaurant_times": "",
+    "speciality_kids_playground": false,
+    "speciality_airport_shuttle": false,
+    "speciality_24h_front_desk": false,
+    "speciality_extras": "",
+    "parking": true,
+    "cleaning_laundry": false,
+    "cleaning_housekeeping": true
+  }
+},
+{
+  "model": "hotel_africa.unitrate",
+  "pk": 3,
+  "fields": {
+    "name": "Tahiti Hotel Budget Double Room Rate",
+    "valid_from": "2020-01-01",
+    "valid_to": "2020-12-31",
+    "rate_currency": "EUR (Europe)",
+    "rate_standard": "49.00",
+    "rate_early_booker": "49.00",
+    "free_cancellation": true,
+    "rate_cancellation": "0.00",
+    "payment_cash": true,
+    "payment_creditcard": false,
+    "payment_paypal": false,
+    "payment_wiretransfer": false,
+    "payment_westernunion": false,
+    "special_offers": "",
+    "meals": ""
+  }
+},
+{
+  "model": "hotel_africa.unitrate",
+  "pk": 4,
+  "fields": {
+    "name": "Christians Cozy Garden House Summer",
+    "valid_from": "2020-06-01",
+    "valid_to": "2020-09-30",
+    "rate_currency": "EUR (Europe)",
+    "rate_standard": "50.00",
+    "rate_early_booker": "40.00",
+    "free_cancellation": true,
+    "rate_cancellation": "0.00",
+    "payment_cash": true,
+    "payment_creditcard": false,
+    "payment_paypal": true,
+    "payment_wiretransfer": true,
+    "payment_westernunion": false,
+    "special_offers": "",
+    "meals": ""
+  }
+},
+{
+  "model": "hotel_africa.unitrate",
+  "pk": 5,
+  "fields": {
+    "name": "Christians Cozy Garden House Winter",
+    "valid_from": "2020-10-01",
+    "valid_to": "2020-05-31",
+    "rate_currency": "EUR (Europe)",
+    "rate_standard": "10.00",
+    "rate_early_booker": "10.00",
+    "free_cancellation": true,
+    "rate_cancellation": "0.00",
+    "payment_cash": true,
+    "payment_creditcard": false,
+    "payment_paypal": false,
+    "payment_wiretransfer": false,
+    "payment_westernunion": false,
+    "special_offers": "",
+    "meals": ""
+  }
+},
+{
+  "model": "hotel_africa.unitrate",
+  "pk": 6,
+  "fields": {
+    "name": "GHII Training & Convention Center - Single",
+    "valid_from": "2020-01-01",
+    "valid_to": "2020-12-31",
+    "rate_currency": "USD (USA)",
+    "rate_standard": "50.00",
+    "rate_early_booker": "50.00",
+    "free_cancellation": false,
+    "rate_cancellation": "30.00",
+    "payment_cash": true,
+    "payment_creditcard": false,
+    "payment_paypal": true,
+    "payment_wiretransfer": false,
+    "payment_westernunion": false,
+    "special_offers": "",
+    "meals": ""
+  }
+},
+{
+  "model": "hotel_africa.unitrate",
+  "pk": 7,
+  "fields": {
+    "name": "GHII Training & Convention Center - Double",
+    "valid_from": "2020-01-01",
+    "valid_to": "2020-12-31",
+    "rate_currency": "USD (USA)",
+    "rate_standard": "80.00",
+    "rate_early_booker": "60.00",
+    "free_cancellation": false,
+    "rate_cancellation": "40.00",
+    "payment_cash": true,
+    "payment_creditcard": false,
+    "payment_paypal": true,
+    "payment_wiretransfer": false,
+    "payment_westernunion": false,
+    "special_offers": "",
+    "meals": ""
+  }
+},
+{
+  "model": "hotel_africa.unitrate",
+  "pk": 8,
+  "fields": {
+    "name": "GHII Training & Convention Center - Executive",
+    "valid_from": "2020-01-01",
+    "valid_to": "2020-12-31",
+    "rate_currency": "USD (USA)",
+    "rate_standard": "150.00",
+    "rate_early_booker": "150.00",
+    "free_cancellation": false,
+    "rate_cancellation": "150.00",
+    "payment_cash": true,
+    "payment_creditcard": false,
+    "payment_paypal": true,
+    "payment_wiretransfer": false,
+    "payment_westernunion": false,
+    "special_offers": "",
+    "meals": ""
+  }
+},
+{
+  "model": "hotel_africa.unitrate",
+  "pk": 9,
+  "fields": {
+    "name": "Lake Sheperd Guesthouse",
+    "valid_from": "2020-01-01",
+    "valid_to": "2020-12-31",
+    "rate_currency": "USD (USA)",
+    "rate_standard": "100.00",
+    "rate_early_booker": "100.00",
+    "free_cancellation": false,
+    "rate_cancellation": "100.00",
+    "payment_cash": true,
+    "payment_creditcard": false,
+    "payment_paypal": false,
+    "payment_wiretransfer": false,
+    "payment_westernunion": false,
+    "special_offers": "",
+    "meals": ""
+  }
+},
+{
+  "model": "hotel_africa.unit",
+  "pk": 3,
+  "fields": {
+    "name": "Budget Double Room",
+    "description": "This double room has a electric kettle and air conditioning.",
+    "facility": 2,
+    "quantity_of_units_in_facility": 9,
+    "type": "apartment",
+    "max_people": 3,
+    "square_meters": 25,
+    "internet_access": "in_unit",
+    "internet_free_of_charge": true,
+    "furnishing_sitting_area": true,
+    "furnishing_sofa": true,
+    "furnishing_desk": true,
+    "furnishing_extras": "",
+    "amenity_ac": false,
+    "amenity_fan": true,
+    "amenity_tv": true,
+    "amenity_private_bathroom": true,
+    "amenity_shower": true,
+    "amenity_towels": true,
+    "amenity_mosquito_net": true,
+    "amenity_private_entry": false,
+    "amenity_smoking": false,
+    "amenity_pets": false,
+    "amenity_wheelchair": false,
+    "amenity_extras": "",
+    "unitrates": [
+      3
+    ]
+  }
+},
+{
+  "model": "hotel_africa.unit",
+  "pk": 4,
+  "fields": {
+    "name": "Christians Cozy Garden House",
+    "description": "",
+    "facility": 3,
+    "quantity_of_units_in_facility": 1,
+    "type": "house",
+    "max_people": 4,
+    "square_meters": 15,
+    "internet_access": "no",
+    "internet_free_of_charge": false,
+    "furnishing_sitting_area": false,
+    "furnishing_sofa": false,
+    "furnishing_desk": false,
+    "furnishing_extras": "",
+    "amenity_ac": false,
+    "amenity_fan": false,
+    "amenity_tv": false,
+    "amenity_private_bathroom": false,
+    "amenity_shower": false,
+    "amenity_towels": false,
+    "amenity_mosquito_net": false,
+    "amenity_private_entry": true,
+    "amenity_smoking": false,
+    "amenity_pets": false,
+    "amenity_wheelchair": false,
+    "amenity_extras": "",
+    "unitrates": [
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "hotel_africa.unit",
+  "pk": 5,
+  "fields": {
+    "name": "GHII Training & Convention Center - Double",
+    "description": "",
+    "facility": 4,
+    "quantity_of_units_in_facility": 4,
+    "type": "room",
+    "max_people": 2,
+    "square_meters": 12,
+    "internet_access": "upon_request",
+    "internet_free_of_charge": false,
+    "furnishing_sitting_area": false,
+    "furnishing_sofa": false,
+    "furnishing_desk": false,
+    "furnishing_extras": "",
+    "amenity_ac": false,
+    "amenity_fan": false,
+    "amenity_tv": false,
+    "amenity_private_bathroom": false,
+    "amenity_shower": true,
+    "amenity_towels": true,
+    "amenity_mosquito_net": true,
+    "amenity_private_entry": false,
+    "amenity_smoking": false,
+    "amenity_pets": false,
+    "amenity_wheelchair": false,
+    "amenity_extras": "",
+    "unitrates": [
+      7
+    ]
+  }
+},
+{
+  "model": "hotel_africa.unit",
+  "pk": 6,
+  "fields": {
+    "name": "GHII Training & Convention Center - Single",
+    "description": "",
+    "facility": 4,
+    "quantity_of_units_in_facility": 4,
+    "type": "room",
+    "max_people": 1,
+    "square_meters": 10,
+    "internet_access": "upon_request",
+    "internet_free_of_charge": false,
+    "furnishing_sitting_area": false,
+    "furnishing_sofa": false,
+    "furnishing_desk": false,
+    "furnishing_extras": "",
+    "amenity_ac": false,
+    "amenity_fan": true,
+    "amenity_tv": false,
+    "amenity_private_bathroom": false,
+    "amenity_shower": true,
+    "amenity_towels": true,
+    "amenity_mosquito_net": true,
+    "amenity_private_entry": false,
+    "amenity_smoking": false,
+    "amenity_pets": false,
+    "amenity_wheelchair": false,
+    "amenity_extras": "",
+    "unitrates": [
+      6
+    ]
+  }
+},
+{
+  "model": "hotel_africa.unit",
+  "pk": 7,
+  "fields": {
+    "name": "GHII Training & Convention Center - Executive",
+    "description": "",
+    "facility": 4,
+    "quantity_of_units_in_facility": 2,
+    "type": "room",
+    "max_people": 1,
+    "square_meters": 20,
+    "internet_access": "in_unit",
+    "internet_free_of_charge": true,
+    "furnishing_sitting_area": false,
+    "furnishing_sofa": false,
+    "furnishing_desk": true,
+    "furnishing_extras": "",
+    "amenity_ac": false,
+    "amenity_fan": true,
+    "amenity_tv": false,
+    "amenity_private_bathroom": true,
+    "amenity_shower": true,
+    "amenity_towels": true,
+    "amenity_mosquito_net": true,
+    "amenity_private_entry": false,
+    "amenity_smoking": false,
+    "amenity_pets": false,
+    "amenity_wheelchair": false,
+    "amenity_extras": "",
+    "unitrates": [
+      8
+    ]
+  }
+},
+{
+  "model": "hotel_africa.unit",
+  "pk": 8,
+  "fields": {
+    "name": "Lake Sheperd Guesthouse",
+    "description": "",
+    "facility": 5,
+    "quantity_of_units_in_facility": 10,
+    "type": "room",
+    "max_people": 2,
+    "square_meters": 25,
+    "internet_access": "in_unit",
+    "internet_free_of_charge": true,
+    "furnishing_sitting_area": false,
+    "furnishing_sofa": false,
+    "furnishing_desk": true,
+    "furnishing_extras": "",
+    "amenity_ac": true,
+    "amenity_fan": false,
+    "amenity_tv": false,
+    "amenity_private_bathroom": true,
+    "amenity_shower": true,
+    "amenity_towels": true,
+    "amenity_mosquito_net": true,
+    "amenity_private_entry": false,
+    "amenity_smoking": false,
+    "amenity_pets": false,
+    "amenity_wheelchair": false,
+    "amenity_extras": "",
+    "unitrates": [
+      9
+    ]
+  }
+},
+{
+  "model": "hotel_africa.facilityphoto",
+  "pk": 4,
+  "fields": {
+    "facility": 2,
+    "image": "facility_2_Tahiti Hotel/facility/204897097.jpg"
+  }
+},
+{
+  "model": "hotel_africa.facilityphoto",
+  "pk": 5,
+  "fields": {
+    "facility": 2,
+    "image": "facility_2_Tahiti Hotel/facility/225349293.jpg"
+  }
+},
+{
+  "model": "hotel_africa.facilityphoto",
+  "pk": 6,
+  "fields": {
+    "facility": 2,
+    "image": "facility_2_Tahiti Hotel/facility/225349406.jpg"
+  }
+},
+{
+  "model": "hotel_africa.facilityphoto",
+  "pk": 7,
+  "fields": {
+    "facility": 2,
+    "image": "facility_2_Tahiti Hotel/facility/225349439.jpg"
+  }
+},
+{
+  "model": "hotel_africa.facilityphoto",
+  "pk": 8,
+  "fields": {
+    "facility": 2,
+    "image": "facility_2_Tahiti Hotel/facility/225349501.jpg"
+  }
+},
+{
+  "model": "hotel_africa.facilityphoto",
+  "pk": 9,
+  "fields": {
+    "facility": 2,
+    "image": "facility_2_Tahiti Hotel/facility/225349938.jpg"
+  }
+},
+{
+  "model": "hotel_africa.facilityphoto",
+  "pk": 10,
+  "fields": {
+    "facility": 2,
+    "image": "facility_2_Tahiti Hotel/facility/225349942.jpg"
+  }
+},
+{
+  "model": "hotel_africa.facilityphoto",
+  "pk": 11,
+  "fields": {
+    "facility": 2,
+    "image": "facility_2_Tahiti Hotel/facility/225350291.jpg"
+  }
+},
+{
+  "model": "hotel_africa.facilityphoto",
+  "pk": 12,
+  "fields": {
+    "facility": 2,
+    "image": "facility_2_Tahiti Hotel/facility/225350807.jpg"
+  }
+},
+{
+  "model": "hotel_africa.facilityphoto",
+  "pk": 13,
+  "fields": {
+    "facility": 4,
+    "image": "facility_4_GHII Training Center/facility/unnamed.jpg"
+  }
+},
+{
+  "model": "hotel_africa.facilityphoto",
+  "pk": 14,
+  "fields": {
+    "facility": 4,
+    "image": "facility_4_GHII Training Center/facility/malawi1.jpg"
+  }
+},
+{
+  "model": "hotel_africa.facilityphoto",
+  "pk": 15,
+  "fields": {
+    "facility": 4,
+    "image": "facility_4_GHII Training Center/facility/malawi2.jpg"
+  }
+},
+{
+  "model": "hotel_africa.facilityphoto",
+  "pk": 16,
+  "fields": {
+    "facility": 5,
+    "image": "facility_5_Liberia/facility/liberia1.jpg"
+  }
+},
+{
+  "model": "hotel_africa.facilityphoto",
+  "pk": 17,
+  "fields": {
+    "facility": 5,
+    "image": "facility_5_Liberia/facility/liberia2.jpg"
+  }
+},
+{
+  "model": "hotel_africa.facilityphoto",
+  "pk": 18,
+  "fields": {
+    "facility": 5,
+    "image": "facility_5_Liberia/facility/liberia3.jpg"
+  }
+},
+{
+  "model": "hotel_africa.facilitylanguage",
+  "pk": 3,
+  "fields": {
+    "facility": 2,
+    "language": "german"
+  }
+},
+{
+  "model": "hotel_africa.facilitylanguage",
+  "pk": 4,
+  "fields": {
+    "facility": 2,
+    "language": "french"
+  }
+},
+{
+  "model": "hotel_africa.facilitylanguage",
+  "pk": 5,
+  "fields": {
+    "facility": 2,
+    "language": "english"
+  }
+},
+{
+  "model": "hotel_africa.facilitylanguage",
+  "pk": 6,
+  "fields": {
+    "facility": 2,
+    "language": "spanish"
+  }
+},
+{
+  "model": "hotel_africa.facilitylanguage",
+  "pk": 7,
+  "fields": {
+    "facility": 3,
+    "language": "german"
+  }
+},
+{
+  "model": "hotel_africa.facilitylanguage",
+  "pk": 8,
+  "fields": {
+    "facility": 3,
+    "language": "english"
+  }
+},
+{
+  "model": "hotel_africa.facilitylanguage",
+  "pk": 9,
+  "fields": {
+    "facility": 4,
+    "language": "german"
+  }
+},
+{
+  "model": "hotel_africa.facilitylanguage",
+  "pk": 10,
+  "fields": {
+    "facility": 4,
+    "language": "english"
+  }
+},
+{
+  "model": "hotel_africa.facilitylanguage",
+  "pk": 11,
+  "fields": {
+    "facility": 5,
+    "language": "english"
+  }
+},
+{
+  "model": "hotel_africa.unitphoto",
+  "pk": 6,
+  "fields": {
+    "unit": 3,
+    "image": "facility_2_Tahiti Hotel/units/225349680.jpg"
+  }
+},
+{
+  "model": "hotel_africa.unitphoto",
+  "pk": 7,
+  "fields": {
+    "unit": 3,
+    "image": "facility_2_Tahiti Hotel/units/203853546.jpg"
+  }
+},
+{
+  "model": "hotel_africa.unitphoto",
+  "pk": 8,
+  "fields": {
+    "unit": 3,
+    "image": "facility_2_Tahiti Hotel/units/218130116.jpg"
+  }
+},
+{
+  "model": "hotel_africa.unitphoto",
+  "pk": 9,
+  "fields": {
+    "unit": 3,
+    "image": "facility_2_Tahiti Hotel/units/224189276.jpg"
+  }
+},
+{
+  "model": "hotel_africa.unitphoto",
+  "pk": 10,
+  "fields": {
+    "unit": 3,
+    "image": "facility_2_Tahiti Hotel/units/225349488.jpg"
+  }
+},
+{
+  "model": "hotel_africa.unitphoto",
+  "pk": 11,
+  "fields": {
+    "unit": 3,
+    "image": "facility_2_Tahiti Hotel/units/225349646.jpg"
+  }
+},
+{
+  "model": "hotel_africa.unitphoto",
+  "pk": 12,
+  "fields": {
+    "unit": 3,
+    "image": "facility_2_Tahiti Hotel/units/225349664.jpg"
+  }
+},
+{
+  "model": "hotel_africa.unitphoto",
+  "pk": 13,
+  "fields": {
+    "unit": 3,
+    "image": "facility_2_Tahiti Hotel/units/225349754.jpg"
+  }
+},
+{
+  "model": "hotel_africa.unitbed",
+  "pk": 4,
+  "fields": {
+    "unit": 3,
+    "bed": "king"
+  }
+},
+{
+  "model": "hotel_africa.unitbed",
+  "pk": 5,
+  "fields": {
+    "unit": 3,
+    "bed": "single"
+  }
+},
+{
+  "model": "hotel_africa.unitbed",
+  "pk": 6,
+  "fields": {
+    "unit": 4,
+    "bed": "double"
+  }
+},
+{
+  "model": "hotel_africa.unitbed",
+  "pk": 7,
+  "fields": {
+    "unit": 4,
+    "bed": "double"
+  }
+},
+{
+  "model": "hotel_africa.unitbed",
+  "pk": 8,
+  "fields": {
+    "unit": 5,
+    "bed": "double"
+  }
+},
+{
+  "model": "hotel_africa.unitbed",
+  "pk": 9,
+  "fields": {
+    "unit": 7,
+    "bed": "double"
+  }
+},
+{
+  "model": "hotel_africa.unitbed",
+  "pk": 10,
+  "fields": {
+    "unit": 8,
+    "bed": "double"
+  }
+}
+]
